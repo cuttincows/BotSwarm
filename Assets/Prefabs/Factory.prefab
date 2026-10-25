@@ -267,7 +267,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7077761976103766807}
-  - component: {fileID: 2093257020406280732}
   m_Layer: 9
   m_Name: BuildProgressBase
   m_TagString: Untagged
@@ -292,20 +291,6 @@ Transform:
   - {fileID: 5092382612537488760}
   m_Father: {fileID: 3807746700216592805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2093257020406280732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3241794658074694761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62a35a6b1111d1a4ca685e928b291a93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  buildProgressEmptyScale: {x: 0.92, y: 0.07474645, z: 0.92}
-  buildProgressEmptyPos: {x: 0, y: -1.5166, z: -0.06}
 --- !u!1 &3252862811352676360
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +558,7 @@ GameObject:
   - component: {fileID: 7811260379011161563}
   - component: {fileID: 6016906361073217673}
   - component: {fileID: 1144987935986540948}
+  - component: {fileID: 5368631530965529148}
   m_Layer: 9
   m_Name: BuildProgress
   m_TagString: Untagged
@@ -589,7 +575,7 @@ Transform:
   m_GameObject: {fileID: 7867010493859864650}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0362, z: -0.06}
+  m_LocalPosition: {x: 0, y: -0.0362, z: -0.144}
   m_LocalScale: {x: 0.92, y: 3.0354457, z: 0.92}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -673,6 +659,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5368631530965529148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867010493859864650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a35a6b1111d1a4ca685e928b291a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  buildProgressEmptyScale: {x: 0.92, y: 0.07474645, z: 0.92}
+  buildProgressEmptyPos: {x: 0, y: -1.5, z: -0.144}
 --- !u!1 &8766771313589835796
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,11 +745,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367e6d032226ca548a77c8c68b050551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  MaxHealth: 10
+  MaxHealth: 5
   ToSpawn: {fileID: 2009245606650256456, guid: 1856e09601bb6294c9f11c7580178172, type: 3}
   SpawnCooldown: 10
   SpawnPoint: {fileID: 130181623887566284}
-  BuildProgressRenderer: {fileID: 0}
+  BuildProgressRenderer: {fileID: 5368631530965529148}
 --- !u!1 &9204887878125657633
 GameObject:
   m_ObjectHideFlags: 0

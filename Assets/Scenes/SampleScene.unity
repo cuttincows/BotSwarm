@@ -1182,6 +1182,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5092382612537488760, guid: dfd3838552117784ebcd738f3b101f25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183451376272758409, guid: dfd3838552117784ebcd738f3b101f25, type: 3}
+      propertyPath: MaxHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8766771313589835796, guid: dfd3838552117784ebcd738f3b101f25, type: 3}
       propertyPath: m_Name
       value: Factory

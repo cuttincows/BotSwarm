@@ -15,7 +15,7 @@ public class BuildProgressRenderer : MonoBehaviour
 
     public void UpdateProgress(float t)
     {
-        transform.localScale = Vector3.Lerp(buildProgressEmptyScale, buildProgressFullScale, t);
-        transform.localPosition = Vector3.Lerp(buildProgressEmptyPos, buildProgressFullPos, t);
+        transform.localScale = Vector3.Lerp(buildProgressEmptyScale, buildProgressFullScale, 1 - t);
+        transform.localPosition = Vector3.Lerp(buildProgressEmptyPos, buildProgressFullPos, 1 - t);
     }
 }
