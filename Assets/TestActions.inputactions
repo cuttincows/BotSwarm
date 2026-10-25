@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "TestActions",
+    "maps": [
+        {
+            "name": "Test",
+            "id": "024f2820-bc62-471f-9f73-03a8c14dc39f",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "36d5f3ed-b329-4d9d-a7aa-4ca6e72f18b1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2994d1d1-8ffc-41f1-a42f-4d6e9795fb10",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
